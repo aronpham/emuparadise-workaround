@@ -12,6 +12,6 @@
     var id = encodeURIComponent((document.URL).split("/")[5]);
     var inner =
         "<a target='_blank' href='/roms/get-download.php?gid=" + id + "&test=true'"
-        + " title='Download link'> Dowload link</a>"
+        + " title='Download link'> Dowload link</a>";
     document.getElementsByClassName("download-link")[0].innerHTML = inner;
 })();
