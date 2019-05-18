@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name    emuparadise workaround
-// @version 1.2
+// @version 2.1
 // @author  aronpham
 // @match   https://www.emuparadise.me/*/*/*
 // @grant   none
@@ -27,7 +27,7 @@ function oldWorkAround(){
     if (platform === "Sega_Dreamcast_ISOs") {
         var server = ["50.7.92.186", "50.7.189.186"];
         var path = "/happyxhJ1ACmlTrxJQpol71nBc/Dreamcast/";
-        for (i = 0; i < linkArray.length; i++) {
+        for (var i = 0; i < linkArray.length; i++) {
             var fileName = escape(linkArray[i].innerHTML.substring(9)) + ".7z";
             var link = "http://" + server[0] + path + fileName;
             linkArray[i].href = link;
